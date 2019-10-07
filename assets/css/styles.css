@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+/*Header*/
+
+.header {
+    width: 100%;
+    background-color: #333333;
+    color: white;
+}
+
+.header_container {
+    width: 100%;
+    max-width: 1096px;
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.currency {
+    font-size: 13px;
+    color: #777777;
+    position: relative;
+}
+
+.cur {
+    display: flex;
+    justify-content: space-between;
+}
+
+.currency_text {
+    padding-right: 3px;
+}
+
+.currency_value {
+    text-transform: uppercase;
+}
+
+.currency_value:after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-bottom: 1.5px solid #777777;
+    border-right: 1.5px solid #777777;
+    transform: translateY(-50%) rotate(45deg);
+    position: absolute;
+    top: 47%;
+    left: 103px;
+}
+
+.register {
+    width: 24%;
+    font-size: 13px;
+
+    color: #999999;
+}
+
+.sign_in {
+    width: 35%;
+    font-size: 13px;
+
+    color: #999999;
+}
+
+.shopping_cart {
+    width: 41%;
+    height: 45px;
+    padding: 15px 25px 16px 64px;
+
+    position: relative;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around; */
+
+    background-color: #00c8c8;
+}
+
+.group_left {
+    width: 100%;
+    max-width: 363px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart_logo {
+    position: absolute;
+    top: 50%;
+    left: 22px;
+    transform: translateY(-50%);
+}
+
+.cart_text {
+    font-size: 13px;
+}
+
+.cart_text:after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-bottom: 1.5px solid white;
+    border-right: 1.5px solid white;
+    transform: translateY(-50%) rotate(45deg);
+    position: absolute;
+    top: 50%;
+    right: 24px;
+}
+
+
+/*Intro*/
+.intro_container {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 38px auto 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    color: #222222;
+    text-transform: uppercase;
+
+    width: 50%;
+}
+
+
+
+.menu_item {
+    padding-right: 15px;
+
+    font-size: 13px;
+    color: #222222;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.search {
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #989898;
+
+    padding-left: 10px;
+}
