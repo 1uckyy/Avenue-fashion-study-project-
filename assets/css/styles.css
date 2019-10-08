@@ -173,6 +173,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #222222;
     text-decoration: none;
     text-transform: uppercase;
+    transition: color .1s linear;
+}
+
+.menu_item:hover {
+    color: #00c8c8;
 }
 
 .menu_item:last-child {
@@ -259,4 +264,48 @@ h1, h2, h3, h4, h5, h6 {
     color: #f8f8f8;
     background-color: #00c8c8;
     border-color: #00c8c8;
+}
+
+.line { 
+    content: "";
+    width: 86%;
+    height: 1px;
+    margin: 58px auto 50px;
+    background-color: #f0f0f0;
+}
+
+
+/*Items*/
+.menu_items {
+    padding-left: 129px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+
+    font-weight: 400;
+    color: #9a9a9a;
+
+    margin-top: 60px;
+}
+
+.image_item {
+    position: relative;
+}
+
+.currency_image_item {
+    font-size: 12px;
+
+    position: absolute;
+    top: 9px;
+    left: 8px;
+}
+
+.value_image_item {
+    font-size: 21px;
+
+    position: absolute;
+    top: 9px;
+    left: 16px;
 }
