@@ -186,6 +186,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .search_input {
     height: 27px;
+    width: 100%;
 
     font-size: 13px;
     font-family: 'Montserrat', sans-serif;
@@ -206,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 1px;
+    right: 5%;
 }
 
 .ave {
@@ -277,21 +278,42 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Items*/
 .menu_items {
-    padding-left: 129px;
+    width: 100%;
+    max-width: 1667px;
+
+    margin: 0 auto;
 }
 
 .images {
-    display: flex;
-    justify-content: space-around;
-
     font-weight: 400;
     color: #9a9a9a;
 
-    margin-top: 60px;
+    width: 100%;
+    max-width: 1667px;
+
+    display: flex;
+
+    margin: 60px auto 0;
+}
+
+.images_col {
+    flex: 1 1 0;
+}
+
+.group_image {
+    width: 50%;
+    flex: 1 1 0;
 }
 
 .image_item {
     position: relative;
+    display: inline-block;
+}
+
+.image {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .currency_image_item {
