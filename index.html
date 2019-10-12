@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7e5e8453d0.js" crossorigin="anonymous"></script>
     <title>Avenue fashion</title>
 </head>
 <body>
@@ -52,7 +53,7 @@
             <div class="char">a</div>
             <div class="char">v</div>
             <div class="char">e</div>
-            <a class="btn" href="#">shop men’s collection</a>
+            <a class="btn btn_intro" href="#">shop men’s collection</a>
         </div>
     </section><!-- ./intro -->
 
@@ -68,16 +69,18 @@
         </nav>
 
         <div class="images">
-            <div class="group_image">
-                <div class="image_item" style="padding-right: 25px">
-                    <div class="currency_image_item">£</div>
-                    <div class="value_image_item">89.99</div>
-                    <img class="image" src="assets/images/items/item-1.jpg" alt="">
-                </div>
-                <div class="image_item">
-                    <div class="currency_image_item">£</div>
-                    <div class="value_image_item">47.50</div>
-                    <img class="image" src="assets/images/items/item-2.jpg" alt="">
+            <div class="group_image" style="margin-right: 25px">
+                <div class="flexbox">
+                    <div class="image_item" style="margin-right: 28px">
+                        <div class="currency_image_item">£</div>
+                        <div class="value_image_item">89.99</div>
+                        <img class="image" src="assets/images/items/item-1.jpg" alt="">
+                    </div>
+                    <div class="image_item">
+                        <div class="currency_image_item">£</div>
+                        <div class="value_image_item">47.50</div>
+                        <img class="image" src="assets/images/items/item-2.jpg" alt="">
+                    </div>
                 </div>
                 <div class="image_item" style="display: block; margin-top: 25px;">
                     <div class="currency_image_item">£</div>
@@ -86,66 +89,130 @@
                 </div>
             </div>
             <div class="group_image">
-                <div class="image_item" style="margin-bottom: 10px">
+                <div class="image_item" style="margin-bottom: 7px">
                     <div class="currency_image_item">£</div>
                     <div class="value_image_item" style="text-decoration: line-through">107</div>
                     <div class="currency_image_item" style="left: 60px">£</div>
                     <div class="value_image_item" style="left: 68px">89.99</div>
                     <img class="image" src="assets/images/items/item-4.jpg" alt="">
                 </div>
-                <div class="image_item" style="padding-right: 42.5px">
-                    <div class="currency_image_item">£</div>
-                    <div class="value_image_item">29.95</div>
-                    <img class="image" src="assets/images/items/item-5.jpg" alt="">
-                </div>
-                <div class="image_item">
-                    <div class="currency_image_item">£</div>
-                    <div class="value_image_item">34.79</div>
-                    <img class="image" src="assets/images/items/item-6.jpg" alt="">
+                <div class="flexbox">
+                    <div class="image_item" style="margin-right: 36px">
+                        <div class="currency_image_item">£</div>
+                        <div class="value_image_item">29.95</div>
+                        <img class="image" src="assets/images/items/item-5.jpg" alt="">
+                    </div>
+                    <div class="image_item">
+                        <div class="currency_image_item">£</div>
+                        <div class="value_image_item">34.79</div>
+                        <img class="image" src="assets/images/items/item-6.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- <div class="images">
-            <div class="images_col">
-                <div class="group_image">
-                    <div class="image_item">
-                        <div class="currency_image_item">£</div>
-                        <div class="value_image_item">89.99</div>
-                        <img class="image" src="assets/images/items/item-1.jpg" alt="">
-                    </div>
-                    <div class="image_item">
-                        <div class="currency_image_item">£</div>
-                        <div class="value_image_item">47.50</div>
-                        <img class="image" src="assets/images/items/item-2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="image_item">
-                    <div class="currency_image_item">£</div>
-                    <div class="value_image_item">47.50</div>
-                    <img class="image" src="assets/images/items/item-3.jpg" alt="">
-                </div>
-            </div>
-            <div class="images_col">
-                <div class="image_item">
-                    <div class="currency_image_item">£</div>
-                    <div class="value_image_item">47.50</div>
-                    <img class="image" src="assets/images/items/item-3.jpg" alt="">
-                </div>
-                <div class="group_image">
-                    <div class="image_item">
-                        <div class="currency_image_item">£</div>
-                        <div class="value_image_item">89.99</div>
-                        <img class="image" src="assets/images/items/item-1.jpg" alt="">
-                    </div>
-                    <div class="image_item">
-                        <div class="currency_image_item">£</div>
-                        <div class="value_image_item">47.50</div>
-                        <img class="image" src="assets/images/items/item-2.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </section> <!-- ./items -->
+
+        <div class="line"></div>
+
+    <section class="lookbook">
+        <div class="lookbook_item">
+            <img class="lookbook_item_image" src="assets/images/lookbook/lookbook-1.png" alt="">
+            <div class="lookbook_item_content">
+                <div class="lookbook_item_title">men's</div>
+                <div class="lookbook_item_subtitle">lookbook</div>
+                <div class="lookbook_item_text">Lorem ipsum dolor sit amet eras facilisis consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui. Elementum metus facilisis ut phasellu.</div>
+                <a href="#" class="btn">view now</a>
+            </div>
+        </div>
+        <div class="lookbook_item">
+            <img class="lookbook_item_image" src="assets/images/lookbook/lookbook-2.png" alt="">
+            <div class="lookbook_item_content">
+                <div class="lookbook_item_title">women's</div>
+                <div class="lookbook_item_subtitle">lookbook</div>
+                <div class="lookbook_item_text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Pellentesque laoreet quis enim et mattis. Quisque interdum felis tellus.</div>
+                <a href="#" class="btn">view now</a>
+            </div>
+        </div>
+        <div class="lookbook_item">
+            <img class="lookbook_item_image" src="assets/images/lookbook/lookbook-3.png" alt="">
+            <div class="lookbook_item_content">
+                <div class="lookbook_item_title">your</div>
+                <div class="lookbook_item_subtitle">lookbook</div>
+                <div class="lookbook_item_text">See an item you like and click the <i class="far fa-heart"></i> button to add it to your lookbook where you can create your own perfect look. It’s like your own boutique!</div>
+                <a href="#" class="btn">view now</a>
+            </div>
+        </div>
+    </section> <!-- ./lookbook -->
+
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_nav">
+                <div class="footer_nav_col">
+                    <div class="footer_nav_col_title">information</div>
+                    <a class="footer_nav_link" href="#">The brand</a>
+                    <a class="footer_nav_link" href="#">Local stores</a>
+                    <a class="footer_nav_link" href="#">Customer service</a>
+                    <a class="footer_nav_link" href="#">Privacy & cookies</a>
+                    <a class="footer_nav_link" href="#">Site map</a>
+                </div>
+                <div class="footer_nav_col">
+                    <div class="footer_nav_col_title">Why buy from us</div>
+                    <a class="footer_nav_link" href="#">Shipping & returns</a>
+                    <a class="footer_nav_link" href="#">Secure shopping</a>
+                    <a class="footer_nav_link" href="#">Testimonials</a>
+                    <a class="footer_nav_link" href="#">Award winning</a>
+                    <a class="footer_nav_link" href="#">Ethical trading</a>
+                </div>
+                <div class="footer_nav_col">
+                    <div class="footer_nav_col_title">Your account</div>
+                    <a class="footer_nav_link" href="#">Sign in</a>
+                    <a class="footer_nav_link" href="#">Register</a>
+                    <a class="footer_nav_link" href="#">View cart</a>
+                    <a class="footer_nav_link" href="#">View your lookbook</a>
+                    <a class="footer_nav_link" href="#">Track an order</a>
+                    <a class="footer_nav_link" href="#">Update information</a>
+                </div>
+                <div class="footer_nav_col">
+                    <div class="footer_nav_col_title">Lookbook</div>
+                    <a class="footer_nav_link" href="#">Latest posts</a>
+                    <a class="footer_nav_link" href="#">Men’s lookbook</a>
+                    <a class="footer_nav_link" href="#">Women’s lookbook</a>
+                    <a class="footer_nav_link" href="#">Lookbooks RSS feed</a>
+                    <a class="footer_nav_link" href="#">View your lookbook</a>
+                    <a class="footer_nav_link" href="#">Delete your lookbook</a>
+                </div>
+                <div class="footer_nav_col">
+                    <div class="footer_nav_col_title">contact details</div>
+                    <a class="footer_nav_link footer_nav_link--double" href="#">Head Office: Avenue Fashion,</a>
+                    <a class="footer_nav_link" href="#">180-182 Regent Street, London.</a>
+                    <a class="footer_nav_link" href="#">Telephone: 0123-456-789 </a>
+                    <a class="footer_nav_link" href="#">Email: support@yourwebsite.com</a>
+                </div>
+            </div> <!-- ./footer_nav -->
+
+            <div class="footer_banners">
+                <div class="award_banner">
+                    <div class="award_winner">award winner</div>
+                    <div class="fashion_awards">fashion awards 2016</div>
+                </div>
+                <div class="social_banner">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest"></i>
+                </div>
+            </div> <!-- ./footer_banners-->
+        </div>
+
+        <div class="footer_copyright">
+            <div class="footer_container">
+                <div class="footer_copyright_box">
+                    <div class="tm">© 2016 Avenue Fashion™</div>
+                    <div class="design_by">Design by RobbyDesigns.com</div>
+                    <div class="dev_by">Dev by Loremipsum.com</div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -136,8 +136,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro_container {
-    width: 100%;
-    max-width: 1667px;
+    /* width: 100%;
+    max-width: 1667px; */
+    width: 86%;
 
     margin: 0 auto;
     padding-top: 38px;
@@ -251,14 +252,16 @@ h1, h2, h3, h4, h5, h6 {
 
     padding: 16px 30px;
     border: 2px solid #737373;
-    
+
+    transition: background-color .1s linear, color .1s linear, border-color .1s linear;
+}
+
+.btn_intro {
     position: absolute;
     right: 12%;
     bottom: 14%;
 
     z-index: 2;
-
-    transition: background-color .1s linear, color .1s linear, border-color .1s linear;
 }
 
 .btn:hover {
@@ -271,29 +274,36 @@ h1, h2, h3, h4, h5, h6 {
     content: "";
     width: 86%;
     height: 1px;
+
     margin: 58px auto 50px;
+    padding: 0 30px;
+
     background-color: #f0f0f0;
 }
 
 
 /*Items*/
 .menu_items {
-    width: 100%;
-    max-width: 1667px;
+    /* width: 100%;
+    max-width: 1667px; */
+    width: 86%;
 
     margin: 0 auto;
+    /* padding: 0 30px; */
 }
 
 .images {
     font-weight: 400;
     color: #9a9a9a;
 
-    width: 100%;
-    max-width: 1667px;
+    /* width: 100%;
+    max-width: 1667px; */
+    width: 86%;
 
     display: flex;
 
     margin: 60px auto 0;
+    /* padding: 0 30px; */
 }
 
 .images_col {
@@ -330,4 +340,194 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 9px;
     left: 16px;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+/*Lookbook*/
+.lookbook{
+    padding-bottom: 123px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.lookbook_item {
+    width:  32.3%;
+
+    background-color: #f8f8f8;
+
+    display: flex;
+}
+
+.lookbook_item_image {
+    /* height: auto;
+    width: 40%;
+
+    position: absolute;
+    bottom: 0; */
+    width: 35%;
+
+    margin-top: 8%;
+    margin-left: 4.5%;
+}
+
+.lookbook_item_content {
+    text-align: right;
+    margin: 15% 6% 0 8%;
+}
+
+.lookbook_item_title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 44.96px;
+    color: #575153;
+}
+
+.lookbook_item_subtitle {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 44.96px;
+    color: #575153;
+    margin-bottom: 10px;
+}
+
+.lookbook_item_text {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #727272;
+    font-size: 14,05px;
+    line-height: 23px;
+    margin-bottom: 40px;
+}
+
+
+/*Footer*/
+.footer {
+    background-color: #f8f8f8;
+}
+
+.footer_container {
+    max-width: 1108px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer_nav {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 55px;
+    margin-bottom: 55px;
+}
+
+.footer_nav_col_title {
+    color: #575153;
+    font-size: 12.18px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    margin-bottom: 22px;
+}
+
+.footer_nav_link {
+    display: block;
+    padding-bottom: 10px;
+
+    color: #727272;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13.11px;
+}
+
+.footer_nav_link--double {
+    padding-bottom: 0;
+}
+
+.footer_banners {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 50px;
+}
+
+.award_banner {
+    background-color: #333333;
+
+    width: 48%;
+
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 33.72px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.award_winner {
+    font-weight: 700;
+
+    padding-top: 56px;
+}
+
+.fashion_awards {
+    font-weight: 400;
+
+    padding-bottom: 56px;
+}
+
+.social_banner {
+    background-color: #00c8c8;
+
+    width: 48%;
+
+    color: #ffffff;
+    font-size: 33.72px;
+
+    text-align: center;
+
+    padding-top: 74px;
+}
+
+.social_banner i {
+    margin-right: 51px;
+}
+
+.social_banner i:last-child {
+    margin-right: 0;
+}
+
+.footer_copyright {
+    background-color: #333333;
+}
+
+.footer_copyright_box {
+    display: flex;
+
+    font-size: 12.18px;
+    font-weight: 500;
+
+    padding: 12px 0;
+}
+
+.tm {
+    color: #999999;
+
+    width: 66%;
+}
+
+.design_by {
+    color: #777777;
+
+    width: 19%;
+}
+
+.dev_by {
+    color: #777777;
+
+    width: 15%;
+    text-align: right;
 }
