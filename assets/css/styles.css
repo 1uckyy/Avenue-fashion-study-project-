@@ -387,6 +387,10 @@ h1, h2, h3, h4, h5, h6 {
     flex: 1 1 0;
 }
 
+.image_mr {
+    margin-right: 25px;
+}
+
 .image_item {
     position: relative;
     display: inline-block;
@@ -648,7 +652,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer_container {
     max-width: 1108px;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -867,7 +871,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .menu_item {
-        padding-right: 20px;
+        padding-right: 30px;
     }
 
     .menu_item:last-child {
@@ -901,5 +905,143 @@ h1, h2, h3, h4, h5, h6 {
 
     .images {
         width: 95%;
+    }
+
+    .men_intro {
+        left: 15%;
+    }
+}
+
+@media (max-width: 1270px) {
+    .men_intro {
+        left: 13%;
+    }
+
+    .lookbook_item {
+        margin-top: 4%;
+        margin-left: 1%;
+    }
+
+    .lookbook_item_content {
+        margin: 5% 6% 0 6%;
+    }
+
+    .lookbook_item_title {
+        font-size: 25px;
+    }
+
+    .lookbook_item_subtitle {
+        font-size: 25px;
+    }
+
+    .lookbook_item_text {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .lookbook_item_content .btn {
+        font-size: 12px;
+        padding: 12px 26px;
+    }
+
+    .menu_item {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .men_intro {
+        left: 10%;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+    .menu_item {
+        padding-right: 25px;
+    }
+
+    .menu_item:last-child {
+        padding-right: 30px;
+    }
+
+    .ave .btn {
+        font-size: 14px;
+        padding: 12px 26px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .lookbook {
+        display: block;
+    }
+
+    .lookbook_item {
+        margin: 4% auto 0;
+        width: 50%;
+    }
+
+    .lookbook_item_content {
+        margin: 10% 6% 0 6%;
+    }
+
+    .lookbook_item_title {
+        font-size: 40px;
+    }
+
+    .lookbook_item_subtitle {
+        font-size: 40px;
+    }
+
+    .lookbook_item_text {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .lookbook_item_content .btn {
+        font-size: 16px;
+        padding: 16px 30px;
+    }
+
+    .images {
+        display: block;
+    }
+
+    .group_image {
+        width: 70%;
+        margin: 0 auto 25px;
+    }
+
+    .char {
+        font-size: 400px;
+    }
+
+    .menu_item {
+        padding-right: 20px;
+    }
+
+    .menu_item:last-child {
+        padding-right: 25px;
+    }
+
+    .menu_items {
+        width: 86%;
+    }
+
+    .flexbox .info {
+        height: 35%;
+        bottom: -35%;
+    }
+}
+
+@media (max-width: 1053px) {
+    .flexbox .info {
+        height: 40%;
+        bottom: -40%;
+    }
+
+    .char {
+        font-size: 340px;
     }
 }
