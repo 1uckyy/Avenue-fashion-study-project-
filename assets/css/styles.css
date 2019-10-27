@@ -72,6 +72,10 @@ h1, h2, h3, h4, h5, h6 {
     left: 103px;
 }
 
+.intro_container .currency {
+    display: none;
+}
+
 /*Register : Sign in*/
 .register {
     width: 24%;
@@ -176,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu_item {
-    padding-right: 50px;
+    margin-right: 50px;
 
     font-size: 13px;
     font-weight: 600;
@@ -192,7 +196,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu_item:last-child {
-    padding-right: 70px;
+    margin-right: 70px;
+}
+
+.intro_container .menu_item {
+    position: relative;
 }
 
 .arrow_down {
@@ -219,8 +227,10 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
 
     position: absolute;
-    top: 40px;
-    width: 70%;
+    top: 30px;
+    right: -200px;
+    z-index: 1;
+    width: 350px;
     display: none;
 
     padding: 25px 26px;
@@ -249,6 +259,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 33.72px;
     letter-spacing: 2px;
     text-align: center;
+
+    padding: 0 10px;
 }
 
 .menu_item:hover .sub {
@@ -621,6 +633,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 10px;
 }
 
+.product_name_fs {
+    font-size: 16px;
+}
+
 .product_description {
     font-family: 'Roboto', sans-serif;
     color: #8e8c8c;
@@ -628,6 +644,10 @@ h1, h2, h3, h4, h5, h6 {
 
     margin-bottom: 2px;
     padding: 0 10px;
+}
+
+.product_description_fs {
+    font-size: 14px;
 }
 
 .product_sub_describtion {
@@ -761,6 +781,8 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: none;
 
     transition: color .1s linear;
+
+    width: fit-content;
 }
 
 .nav_link:hover {
@@ -898,11 +920,11 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1700px) {
     .menu_item {
-        padding-right: 40px;
+        margin-right: 40px;
     }
 
     .menu_item:last-child {
-        padding-right: 55px;
+        margin-right: 55px;
     }
 }
 
@@ -924,11 +946,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .menu_item {
-        padding-right: 25px;
+        margin-right: 25px;
     }
 
     .menu_item:last-child {
-        padding-right: 40px;
+        margin-right: 40px;
     }
 
     .lookbook_item_title {
@@ -958,11 +980,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .menu_item {
-        padding-right: 30px;
+        margin-right: 30px;
     }
 
     .menu_item:last-child {
-        padding-right: 35px;
+        margin-right: 35px;
     }
 
     .lookbook_item_content {
@@ -1046,11 +1068,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .menu_item {
-        padding-right: 25px;
+        margin-right: 25px;
     }
 
     .menu_item:last-child {
-        padding-right: 30px;
+        margin-right: 30px;
     }
 
     .ave .btn {
@@ -1105,11 +1127,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .menu_item {
-        padding-right: 20px;
+        margin-right: 20px;
     }
 
     .menu_item:last-child {
-        padding-right: 25px;
+        margin-right: 25px;
     }
 
     .menu_items {
@@ -1123,6 +1145,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 1053px) {
+    .sub {
+        right: -40px;
+    }
+
     .flexbox .info {
         height: 40%;
         bottom: -40%;
@@ -1143,6 +1169,7 @@ h1, h2, h3, h4, h5, h6 {
         border: 2px solid white;
         position: absolute;
         right: 0;
+        z-index: 2;
     }
 
     .menu {
@@ -1159,7 +1186,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .menu_item_pt {
-        padding-top: 19px;
+        margin-top: 19px;
     }
 
     .nav-toggle {
@@ -1406,6 +1433,15 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 25px;
     }
 
+    .image_item_solo .info {
+        height: 40%;
+        bottom: -40%;
+    }
+
+    .image_item_solo .back_view {
+        top: 30%;
+    }
+
     .lookbook_item {
         width: 100%;
     }
@@ -1457,7 +1493,384 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0 0 0 30px;
     }
 
+    .search_input { 
+        width: 125px;
+    }
+
     .lookbook_item_content {
         margin: 6% 6% 0 6%;
+    }
+
+    .lookbook_item_image {
+        width: 35%;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .lookbook_item_title {
+        font-size: 35px;
+    }
+
+    .lookbook_item_subtitle {
+        font-size: 35px;
+    }
+
+    .lookbook_item_text {
+        font-size: 14px;
+        margin-bottom: 35px;
+    }
+
+    .lookbook_item_content .btn {
+        font-size: 14px;
+        padding: 16px 26px;
+    }
+
+    .header_container .currency {
+        display: none;
+    }
+
+    .intro_container .currency {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 11px;
+    }
+
+    .group_left {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .header {
+        padding: 0 30px;
+    }
+
+    .shopping_cart {
+        width: auto;
+    }
+
+    .group_left {
+        justify-content: flex-end;
+    }
+
+    .sign_in {
+        padding-right: 15px;
+    }
+
+    .register {
+        padding-right: 15px;
+    }
+
+    .image_item_solo .back_view {
+        top: 35%;
+    }
+}
+
+@media (max-width: 450px) {
+    .image_item_solo .info {
+        height: 50%;
+        bottom: -50%;
+    }
+
+    .image_item_solo .back_view {
+        top: 40%;
+    }
+
+    .header {
+        padding: 0;
+    }
+
+    .menu_items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .items .menu_item {
+        margin-bottom: 10px;
+    }
+
+    .lookbook_item_image {
+        width: 30%;
+        padding-top: 40px;
+    }
+
+    .lookbook_item_title {
+        font-size: 30px;
+    }
+
+    .lookbook_item_subtitle {
+        font-size: 30px;
+    }
+
+    .lookbook_item_text {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .lookbook_item_content .btn {
+        font-size: 12px;
+    }
+
+    .ave .btn {
+        font-size: 10px;
+    }
+
+    .sub {
+        width: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .flexbox .info {
+        height: 40%;
+        bottom: -40%;
+    }
+
+    .flexbox .back_view {
+        top: 32%;
+    }
+
+    .image_item_solo .info {
+        height: 60%;
+        bottom: -60%;
+    }
+
+    .image_item_solo .back_view {
+        top: 45%;
+    }
+
+    .char {
+        font-size: 130px;
+    }
+
+    .lookbook_item_content {
+        margin: 10px 10px 0 0;
+    }
+
+    .lookbook_item_content .btn {
+        padding: 12px;
+    }
+
+    .lookbook_item_title {
+        font-size: 25px;
+    }
+
+    .lookbook_item_subtitle {
+        font-size: 25px;
+    }
+
+    .footer_copyright_box {
+        display: block;
+        text-align: center;
+    }
+
+    .tm {
+        padding-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .design_by {
+        padding-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .dev_by {
+        text-align: unset;
+    }
+}
+
+@media (max-width: 350px) {
+    .image_item_solo .info {
+        height: 70%;
+        bottom: -70%;
+    }
+}
+
+@media (max-width: 333px) {
+    .footer_nav {
+        text-align: center;
+        display: block;
+    }
+
+    .footer_nav_col {
+        padding-right: 0;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .group_left {
+        justify-content: center;
+    }
+
+    .intro_container .currency {
+        top: 39px;
+    }
+
+    .intro_container .search {
+        left: 0;
+        right: unset;
+    }
+
+    .flexbox .info {
+        height: 50%;
+        bottom: -50%;
+    }
+
+    .front_view {
+        display: none;
+    }
+
+    .flexbox .back_view {
+        top: 3%;
+    }
+
+    .image_item_solo .back_view {
+        top: 3%;
+    }
+
+    .lookbook_item_title {
+        font-size: 20px;
+    }
+
+    .lookbook_item_subtitle {
+        font-size: 20px;
+    }
+
+    .lookbook_item_text {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .lookbook_item_content .btn {
+        padding: 8px;
+    }
+
+    .footer_nav .nav_link {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 300px) {
+    .group_left {
+        justify-content: space-around;
+    }
+
+    .sub {
+        right: -60px;
+    }
+
+    .product_name_fs {
+        font-size: 13px;
+    }
+
+    .product_description_fs {
+        font-size: 13px;
+    }
+
+    .char {
+        font-size: 100px;
+    }
+
+    .lookbook_item_text {
+        display: none;
+    }
+
+    .lookbook_item_image {
+        width: 40%;
+        padding-top: 0px;
+    }
+
+    .lookbook_item_content {
+        margin: auto;
+        text-align: center;
+    }
+
+    .lookbook_item_subtitle {
+        margin-bottom: 20px;
+    }
+
+    .lookbook_item_content .btn {
+        padding: 10px 13px;
+    }
+    
+    .del_text {
+        display: none;
+    }
+
+    .shopping_cart {
+        padding: 15px 11px 16px 50px;
+    }
+
+    .cart_logo {
+        left: 13px;
+    }
+
+    .cart_text:after {
+        right: 14px;
+        top: 21px;
+    }
+}
+
+@media (max-width: 270px) {
+    .image_item_solo .info {
+        height: 80%;
+        bottom: -80%;
+    }
+
+    .flexbox .info {
+        height: 60%;
+        bottom: -60%;
+    }
+
+    .social_banner {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .social_banner i {
+        margin-right: 0;
+    }
+
+    .award_winner {
+        padding-top: 40px;
+    }
+
+    .fashion_awards {
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 230px) {
+    .lookbook_item_image {
+        width: 35%;
+    }
+
+    .lookbook_item_title {
+        font-size: 12px;
+    }
+
+    .lookbook_item_subtitle {
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+
+    .lookbook_item_content .btn {
+        padding: 7px 9px;
+    }
+
+    .char {
+        font-size: 70px;
+    }
+
+    .flexbox .info {
+        height: 70%;
+        bottom: -70%;
+    }
+
+    .image_item_solo .info {
+        height: 100%;
+        bottom: -100%;
     }
 }
